@@ -1,0 +1,232 @@
+
+:root
+{
+    --firstColor: #121B1C;
+    --firstColorFaded:#253638;
+    --secondaryColor: #81BCC4;
+    --secondaryColorFaded: #93D7E0;
+    --fontFamily1 : "monospace";
+}
+
+/*Asztali nézet*/
+
+body
+{
+    background-color: #D5D8DC ;
+    color: var(--firstColor);
+    font-family: 'Arial';
+    width: 100%;
+}
+
+.application
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.display
+{
+    background-color: var(--firstColor);
+    color: var(--secondaryColor);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    height: 50px;
+    width: 350px;
+    font-size: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.calculator
+{
+    box-shadow: 10px 12px 10px black;
+    background-color: var(--firstColorFaded);
+    border: 1px solid grey;
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 4px;
+}
+
+.calculatorSettings
+{
+    color: #283747 ;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    height: 550px;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.settingsTable
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+}
+
+.calculatorButton
+{
+    border: 0;
+    margin-top: 5px;
+    color: var(--firstColor);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.buttons
+{
+    font-family: var(--fontFamily1);
+    width: 100%;
+    height: 75px;
+    display: block;
+    border: none;
+    background-color: var(--firstColorFaded);
+    color: var(--secondaryColor);
+    font-size: 32px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1px 2px black;
+    padding: 0px;
+}
+
+.buttons:hover {
+    background-color: var(--firstColor);
+    color: var(--secondaryColor);
+    transform: translateY(-2px);
+    box-shadow:  2px 3px black;
+}
+
+.buttons:active {
+    box-shadow:  0px 1px black;
+    transform: translateY(2px);
+}
+
+.table, td
+{
+    width: 400px;
+    padding: 2px;
+}
+
+.pic01
+{
+    box-shadow: 2px 2px black;
+    margin: 10px;
+    width: 150px;
+}
+
+.pic01:hover
+{
+    transform: translateY(-2px);
+    box-shadow: 4px 4px black;
+}
+
+/*Mobil nézet*/
+
+@media (max-width: 900px) 
+{
+.application 
+{
+    width: 350px;
+    flex-direction: column;
+    border: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display
+{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+}
+
+.calculator
+{
+    padding: 0px;
+    width: 350px;
+    height: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.calculatorSettings
+{
+    padding: 0px;
+    width: 350px;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsTable
+{
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calculatorButton
+{
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+.buttons
+{
+    font-family: var(--fontFamily1);
+    width: 80px;
+    height: 75px;
+    display: block;
+    border: none;
+    background-color: var(--firstColorFaded);
+    color: var(--secondaryColor);
+    font-size: 32px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1px 2px black;
+    margin: 0px;
+}
+
+.buttons:hover {
+    background-color: var(--firstColor);
+    color: var(--secondaryColor);
+    transform: translateY(-2px);
+    box-shadow:  2px 3px black;
+}
+
+.buttons:active {
+    box-shadow:  0px 1px black;
+    transform: translateY(2px);
+}
+
+.table, td
+{
+    width: 350px;
+    padding: 2px;
+}
+}

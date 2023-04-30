@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta name="description" content="This is a calculator">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="ikon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+</head>
+<body>
+    <div class="application">
+        <!--Számológép-->
+        <div class="calculator">
+            <!--Számológép kijelző-->
+            <div class="display"></div>
+                <!--Számológép gombjai-->
+                <div class="calculatorButton">
+                    <table>
+                        <tr>
+                            <td><button class="buttons" value="allClear">AC</button></td>
+                            <td><button class="buttons" value="**">x<sup>y</sup></button></td>
+                            <td><button class="buttons" value="√">√x</button></td>
+                            <td><button class="buttons" value="percent">%</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="buttons" value="1">1</button></td>
+                            <td><button class="buttons" value="2">2</button></td>
+                            <td><button class="buttons" value="3">3</button></td>
+                            <td><button class="buttons" value="*">x</button></td>
+    
+                        </tr>
+                        <tr>
+                            <td><button class="buttons" value="4">4</button></td>
+                            <td><button class="buttons" value="5">5</button></td>
+                            <td><button class="buttons" value="6">6</button></td>
+                            <td><button class="buttons" value="/">÷</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="buttons" value="7">7</button></td>
+                            <td><button class="buttons" value="8">8</button></td>
+                            <td><button class="buttons" value="9">9</button></td>
+                            <td><button class="buttons" value="+">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="buttons" value="=">=</button></td>
+                            <td><button class="buttons" value="0">0</button></td>
+                            <td><button class="buttons" value=".">.</button></td>
+                            <td><button class="buttons" value="-" >-</button></td>
+                        </tr>
+                    </table>
+                </div>
+            <!--Számológép téma beállítása-->
+            <div class="calculatorSettings">
+                <table class="settingsTable">
+                    <tr>
+                        <td colspan="2"><h1>Téma</h1><br><b>Itt tudsz témát választani.</b></td>
+                    </tr>
+                    <tr>
+                        <td><input type="image" src="Theme01.png" class="pic01" alt="Theme 1" value="dark"></td>
+                        <td><input type="image" src="Theme02.png" class="pic01" alt="Theme 2" value="white"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="image" src="Theme03.png" class="pic01" alt="Theme 3"  value="darkBlue"></td>
+                        <td><input type="image" src="Theme04.png" class="pic01" alt="Theme 4"  value="LightBlue"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
